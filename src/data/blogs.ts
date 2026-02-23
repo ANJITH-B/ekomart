@@ -1,0 +1,40 @@
+import { Blog } from '@/types';
+
+export const blogs: Blog[] = [
+    {
+        id: '1',
+        title: 'Shion Fixation: Fueling Your Passion for All Things Stylish',
+        slug: 'shion-fixation-fueling-your-passion',
+        excerpt: 'Discover how seasonal produce can transform your everyday meals into extraordinary culinary adventures with fresh, locally-sourced ingredients.',
+        image: 'https://images.unsplash.com/photo-1542838132-92c53300491e?w=600&h=400&fit=crop',
+        author: 'Emily Johnson',
+        authorImage: 'https://images.unsplash.com/photo-1494790108755-2616b5e7f09e?w=100&h=100&fit=crop',
+        date: 'January 15, 2026',
+        category: 'Healthy Living',
+        readTime: '5 min read',
+    },
+    {
+        id: '2',
+        title: 'Ashion Fixation: Fueling Your Passion for All Things Stylish',
+        slug: 'ashion-fixation-fueling-your-passion',
+        excerpt: 'Learn the secrets of organic farming and why choosing certified organic produce is better for your health and the environment.',
+        image: 'https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=600&h=400&fit=crop',
+        author: 'Michael Chen',
+        authorImage: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop',
+        date: 'January 22, 2026',
+        category: 'Organic Food',
+        readTime: '7 min read',
+    },
+    {
+        id: '3',
+        title: 'Fixation: Fueling Your Passion for All Things Stylish',
+        slug: 'fixation-fueling-your-passion',
+        excerpt: 'Explore essential nutrition tips and smart grocery shopping strategies to keep your family healthy on a budget without compromising on quality.',
+        image: 'https://images.unsplash.com/photo-1490818387583-1baba5e638af?w=600&h=400&fit=crop',
+        author: 'Sarah Williams',
+        authorImage: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop',
+        date: 'February 5, 2026',
+        category: 'Nutrition',
+        readTime: '6 min read',
+    },
+];
