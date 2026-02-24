@@ -1,4 +1,3 @@
-import { FiChevronDown, FiHeart, FiMenu, FiSearch, FiShoppingCart, FiUser, FiX } from "react-icons/fi";
 
 
 export const navLinks = [
@@ -12,4 +11,3 @@ export const navLinks = [
     { href: '/contact', label: 'Contact' },
 
 ];
- 

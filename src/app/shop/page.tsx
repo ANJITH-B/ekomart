@@ -130,7 +130,7 @@ function ShopContent() {
                             </button>
                             <span className="text-sm text-gray-400">
                                 Showing <span className="font-bold text-[#253D4E]">{products.length}</span> results
-                                {selectedCat !== 'all' && <span className="text-[#3BB77E] font-semibold"> in "{selectedCat}"</span>}
+                                {selectedCat !== 'all' && <span className="text-[#3BB77E] font-semibold"> in &quot;{selectedCat}&quot;</span>}
                             </span>
                         </div>
                         <div className="flex items-center gap-3">

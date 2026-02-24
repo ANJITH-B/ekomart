@@ -6,8 +6,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
 import ProductCard from '@/components/ui/ProductCard';
 import { products } from '@/data/products';
-import Link from 'next/link';
-import { FiShoppingBag } from 'react-icons/fi';
+
 
 const tabs = [
     { id: 'all', label: 'All' },
@@ -45,8 +44,8 @@ export default function WeeklySales() {
                                 key={tab.id}
                                 onClick={() => setActiveTab(tab.id)}
                                 className={`px-4 py-2 rounded-full text-sm font-bold transition-all ${activeTab === tab.id
-                                        ? 'bg-[#629D23] text-white shadow-lg shadow-[#629D23]/30'
-                                        : 'bg-white text-gray-500 hover:bg-[#e0f5ea] hover:text-[#629D23] border border-gray-200'
+                                    ? 'bg-[#629D23] text-white shadow-lg shadow-[#629D23]/30'
+                                    : 'bg-white text-gray-500 hover:bg-[#e0f5ea] hover:text-[#629D23] border border-gray-200'
                                     }`}
                             >
                                 {tab.label}

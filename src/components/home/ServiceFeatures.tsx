@@ -52,7 +52,7 @@ export default function ServiceFeatures() {
                             transition={{ delay: idx * 0.1, duration: 0.4 }}
                             className="flex items-center gap-4"
                         >
-                            <div className={` bg-[#629D23]/5 w-14 h-14 rounded-full flex items-center justify-center border border-[#629D23]`}>
+                            <div className={` bg-[#629D23]/5 w-16 h-10 md:w-14 md:h-14 rounded-full flex items-center justify-center border border-[#629D23]`}>
                                 <Image src={feat.icon} alt={feat.title} width={24} height={24} className={feat.color} />
                             </div>
                             <div>

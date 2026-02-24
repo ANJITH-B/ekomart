@@ -1,9 +1,7 @@
-import HeroBanner from '@/components/home/HeroBanner';
 import PromoBanners from '@/components/home/PromoBanners';
 import FeaturedCategories from '@/components/home/FeaturedCategories';
 import ServiceFeatures from '@/components/home/ServiceFeatures';
 import PopularProducts from '@/components/home/PopularProducts';
-import DealBanners from '@/components/home/DealBanners';
 import WeeklySales from '@/components/home/WeeklySales';
 import BlogSection from '@/components/home/BlogSection';
 import Carousel from '@/components/home/carousel/carousel';
@@ -17,7 +15,6 @@ export default function HomePage() {
       <FeaturedCategories />
       <PromoBanners />
       <PopularProducts />
-      {/* <DealBanners /> */}
       <WeeklySales />
       <BlogSection />
     </>

@@ -9,12 +9,11 @@ import { MiddleBar } from './MiddleBar';
 
 
 export default function Header() {
-    const [isScrolled, setIsScrolled] = useState(false);
     const [isMobileOpen, setIsMobileOpen] = useState(false);
 
 
     return (
-        <header className={`sticky bg-[#629D23] top-0 z-50 transition-shadow duration-300 ${isScrolled ? 'shadow-lg' : ''}`}>
+        <header className={`sticky bg-[#629D23] top-0 z-50 transition-shadow duration-300  `}>
             <TopBar />
             <MiddleBar isMobileOpen={isMobileOpen} setIsMobileOpen={setIsMobileOpen} />
             <Navigater />

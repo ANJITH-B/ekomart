@@ -1,7 +1,8 @@
+'use client'
 import { container, wordVariants } from "@/utils/animation";
 import { cn } from "@/utils/utils";
 import { AnimatePresence, motion } from "framer-motion";
- 
+import { useMemo } from "react";
 
 type Props = {
   title: string;
@@ -20,6 +21,11 @@ export default function AnimatedTitle({
 }: Props) {
   const words = title.split(" ");
 
+  // Use a deterministic pseudo-random delay based on the index to avoid purity errors
+  const delays = useMemo(() => {
+    return words.slice(0, maxWords).map((_, i) => ((i * 137) % 300) / 1000);
+  }, [words, maxWords]);
+
   return (
     <AnimatePresence mode="sync">
       <motion.div
@@ -36,7 +42,7 @@ export default function AnimatedTitle({
             key={i}
             variants={wordVariants}
             transition={{
-              delay: Math.random() * 0.3,
+              delay: delays[i],
               duration: 0.8,
               ease: [0.43, 0.13, 0.23, 0.96],
             }}

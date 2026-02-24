@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import { FiPhone, FiMapPin, FiMail, FiArrowRight } from 'react-icons/fi';
+import { FiPhone, FiMapPin, FiMail } from 'react-icons/fi';
 import { FaFacebook, FaTwitter, FaInstagram, FaYoutube, FaPinterest } from 'react-icons/fa';
 import Image from 'next/image';
 import logo from '../../../public/logo-02.svg';
@@ -33,10 +33,10 @@ const footerLinks = {
 export default function Footer() {
     return (
         <footer className="bg-[#1F1F25] text-gray-300">
-            <div className="py-14">
-                <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-10">
-                    <div className="lg:col-span-2">
-                        <Image src={logo} alt="Logo" width={150} height={150} className='pb-4'/>
+            <div className="py-14 max-w-7xl mx-auto">
+                <div className="flex flex-col lg:flex-row justify-between px-4 w-full   gap-10 ">
+                    <div className="w-full lg:w-1/3 flex flex-col  justify-between ">
+                        <Image src={logo} alt="Logo" width={150} height={150} className='pb-4' />
                         <p className="text-sm leading-relaxed mb-5 text-gray-400 ">
                             Ekomart is your one-stop destination for fresh, organic groceries. We deliver quality produce, dairy, bakery, and more right to your door.
                         </p>
@@ -68,23 +68,28 @@ export default function Footer() {
                     </div>
 
                     {/* Link Columns */}
-                    {Object.entries(footerLinks).map(([title, links]) => (
-                        <div key={title}>
-                            <h4 className="text-white font-bold text-base mb-4">{title}</h4>
-                            <ul className="space-y-2">
-                                {links.map((link) => (
-                                    <li key={link.label}>
-                                        <Link
-                                            href={link.href}
-                                            className="text-sm text-gray-400 hover:text-[#3BB77E] transition-colors flex items-center gap-1"
-                                        >
-                                            <span className="text-[#3BB77E] text-xs">›</span> {link.label}
-                                        </Link>
-                                    </li>
-                                ))}
-                            </ul>
-                        </div>
-                    ))}
+
+                    <div className='flex flex-row lg:w-1/2 '>
+
+
+                        {Object.entries(footerLinks).map(([title, links]) => (
+                            <div key={title} className='w-full '>
+                                <h4 className="text-white font-bold text-base mb-4">{title}</h4>
+                                <ul className="space-y-2">
+                                    {links.map((link) => (
+                                        <li key={link.label}>
+                                            <Link
+                                                href={link.href}
+                                                className="text-sm text-gray-400 hover:text-[#3BB77E] transition-colors flex items-center gap-1"
+                                            >
+                                                <span className="text-[#3BB77E] text-xs">›</span> {link.label}
+                                            </Link>
+                                        </li>
+                                    ))}
+                                </ul>
+                            </div>
+                        ))}
+                    </div>
                 </div>
             </div>
 

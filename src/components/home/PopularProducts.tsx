@@ -4,8 +4,7 @@ import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import ProductCard from '@/components/ui/ProductCard';
 import { products } from '@/data/products';
-import { FiArrowRight } from 'react-icons/fi';
-import Link from 'next/link';
+
 
 const tabs = [
     { id: 'frozen-foods', label: 'Frozen Foods' },
@@ -15,7 +14,7 @@ const tabs = [
 ];
 
 export default function PopularProducts() {
-    const [activeTab, setActiveTab] = useState('frozen-foods');
+    const [activeTab, setActiveTab] = useState('diet-foods');
 
     const filtered = products.filter((p) => p.tags.includes(activeTab)).slice(0, 8);
 
@@ -27,7 +26,6 @@ export default function PopularProducts() {
                     whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: true }}
                 >
-                    
                     <h2 className="text-3xl font-black text-[#253D4E]">Popular Products</h2>
                 </motion.div>
 
@@ -38,8 +36,8 @@ export default function PopularProducts() {
                             key={tab.id}
                             onClick={() => setActiveTab(tab.id)}
                             className={`px-4 py-2 rounded-full text-sm font-bold transition-all ${activeTab === tab.id
-                                    ? 'bg-[#629D23] text-white shadow-lg shadow-[#629D23]/30'
-                                    : 'bg-[#F4F6FA] text-gray-500 hover:bg-[#e0f5ea] hover:text-[#629D23]'
+                                ? 'bg-[#629D23] text-white shadow-lg shadow-[#629D23]/30'
+                                : 'bg-[#F4F6FA] text-gray-500 hover:bg-[#e0f5ea] hover:text-[#629D23]'
                                 }`}
                         >
                             {tab.label}
@@ -69,7 +67,7 @@ export default function PopularProducts() {
                 </motion.div>
             </AnimatePresence>
 
-              
+
         </section>
     );
 }

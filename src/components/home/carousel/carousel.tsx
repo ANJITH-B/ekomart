@@ -3,10 +3,10 @@ import React, { useCallback, useEffect, useRef, useState } from "react";
 import AnimatedTitle from "./Tittle";
 import Slider from "./slider";
 import { FiArrowRight } from "react-icons/fi";
+import { HeroSlide } from "@/data/banner";
 
-const Carousel = ({ event }: { event: any }) => {
+const Carousel = ({ event }: { event: HeroSlide[] }) => {
   const [index, setIndex] = useState(0);
-  const [isNavigating, setIsNavigating] = useState(false);
   const isNavigatingRef = useRef(false); // synchronous lock
   const timeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
@@ -15,8 +15,6 @@ const Carousel = ({ event }: { event: any }) => {
       if (isNavigatingRef.current) return;
 
       isNavigatingRef.current = true;
-      setIsNavigating(true);
-
       setIndex((prev) =>
         direction === "next"
           ? (prev + 1) % event.length
@@ -26,7 +24,6 @@ const Carousel = ({ event }: { event: any }) => {
       if (timeoutRef.current) clearTimeout(timeoutRef.current);
       timeoutRef.current = setTimeout(() => {
         isNavigatingRef.current = false;
-        setIsNavigating(false);
       }, 800);
     },
     [event.length],
@@ -35,7 +32,7 @@ const Carousel = ({ event }: { event: any }) => {
   useEffect(() => {
     const interval = setInterval(() => goToSlide("next"), 6000);
     return () => clearInterval(interval);
-  }, [index]);
+  }, [goToSlide]);
 
   return (
     <div className="bg-black h-96  w-screen flex relative overflow-hidden padding ">
@@ -56,7 +53,7 @@ const Carousel = ({ event }: { event: any }) => {
             maxWords={10}
             className="absolute -top-20 md:-top-10 w-full   text-white font-extralight leading-3"
           />
-       
+
           <span
             className="mb-20 md:mt-10 w-fit flex items-center gap-2 bg-white text-[#253D4E] font-bold px-6 py-2.5 rounded-full text-sm hover:bg-[#3BB77E] hover:text-white transition-all duration-300"
           >
@@ -65,7 +62,7 @@ const Carousel = ({ event }: { event: any }) => {
         </div>
       </div>
       <div className="absolute w-full h-full z-10">
-        <Slider images={event.map((e: any) => e.image)} index={index} />
+        <Slider images={event.map((e) => e.image)} index={index} />
       </div>
     </div>
   );

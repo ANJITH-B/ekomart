@@ -69,7 +69,7 @@ export default function CartPage() {
                         <FiShoppingBag size={32} className="text-gray-300" />
                     </div>
                     <h2 className="text-2xl font-black text-[#253D4E] mb-2">Your cart is currently empty</h2>
-                    <p className="text-gray-400 mb-8 max-w-sm mx-auto">Looks like you haven't added anything to your cart yet. Let's find some amazing groceries for you!</p>
+                    <p className="text-gray-400 mb-8 max-w-sm mx-auto">Looks like you haven&apos;t added anything to your cart yet. Let&apos;s find some amazing groceries for you!</p>
                     <Link
                         href="/shop"
                         className="inline-flex items-center gap-2 bg-[#3BB77E] hover:bg-[#2a9c65] text-white font-black px-10 py-4 rounded-full transition-all hover:scale-105 shadow-xl shadow-[#3BB77E]/20"

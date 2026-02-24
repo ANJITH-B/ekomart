@@ -1,7 +1,16 @@
 import banner1 from '../../public/banner/03.webp'
 import banner2 from '../../public/banner/09.webp'
+import { StaticImageData } from 'next/image';
 
-export const heroSlides = [
+export interface HeroSlide {
+    id: number;
+    badge: string;
+    title: string;
+    description: string;
+    image: StaticImageData;
+    tag: string;
+}
+export const heroSlides: HeroSlide[] = [
     {
         id: 1,
         badge: 'FRESH & ORGANIC',

@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { blogs } from '@/data/blogs';
-import { FiArrowRight, FiCalendar, FiClock, FiUser } from 'react-icons/fi';
+import { FiCalendar, FiClock } from 'react-icons/fi';
 import { BiPlus } from 'react-icons/bi';
 
 const container = {
@@ -40,7 +40,7 @@ export default function BlogSection() {
                                     alt={blog.title}
                                     className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                                 />
-                              
+
                             </div>
 
                             {/* Content */}
@@ -60,8 +60,8 @@ export default function BlogSection() {
 
                                 <div className="flex items-center justify-between border-t border-gray-50 pt-4">
                                     <span className="text-xs font-bold text-[#3BB77E] flex items-center gap-2">
-                                        <BiPlus size={20}  className='bg-[#3BB77E]/10 rounded-full p-1'/>
-                                        Read Details 
+                                        <BiPlus size={20} className='bg-[#3BB77E]/10 rounded-full p-1' />
+                                        Read Details
                                     </span>
                                 </div>
                             </div>

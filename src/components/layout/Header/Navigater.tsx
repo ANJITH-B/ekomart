@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { FiMapPin, FiMenu } from "react-icons/fi";
+import { FiMapPin } from "react-icons/fi";
 import { navLinks } from "./data";
 
 
@@ -11,9 +11,9 @@ export const Navigater = () => {
 
                 {/* Nav Links */}
                 <nav className="flex items-center gap-6">
-                    {navLinks.map((link) => (
+                    {navLinks.map((link, idx) => (
                         <Link
-                            key={link.href}
+                            key={idx}
                             href={link.href}
                             className="text-white text-sm font-semibold py-3 border-b-2 border-transparent hover:border-white hover:text-white/90 transition-all"
                         >

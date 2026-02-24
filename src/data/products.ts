@@ -1,5 +1,25 @@
 import { Product } from '@/types';
 
+import img1 from "../../public/products/1.png"
+import img2 from "../../public/products/2.png"
+import img3 from "../../public/products/3.png"
+import img4 from "../../public/products/4.png"
+import img5 from "../../public/products/5.png"
+import img6 from "../../public/products/6.png"
+import img7 from "../../public/products/7.png"
+import img8 from "../../public/products/8.png"
+import img9 from "../../public/products/9.png"
+import img10 from "../../public/products/10.png"
+import img11 from "../../public/products/11.png"
+import img12 from "../../public/products/12.png"
+import img13 from "../../public/products/13.png"
+import img14 from "../../public/products/14.png"
+import img15 from "../../public/products/15.png"
+import img16 from "../../public/products/16.png"
+
+
+
+
 export const products: Product[] = [
     {
         id: '1',
@@ -8,7 +28,7 @@ export const products: Product[] = [
         price: 2.99,
         originalPrice: 4.99,
         discount: 40,
-        image: 'https://images.unsplash.com/photo-1576045057995-568f588f82fb?w=400&h=400&fit=crop',
+        image: img1,
         category: 'vegetable',
         tags: ['frozen-foods', 'healthy-foods'],
         rating: 4.5,
@@ -24,7 +44,7 @@ export const products: Product[] = [
         price: 3.49,
         originalPrice: 4.99,
         discount: 30,
-        image: 'https://images.unsplash.com/photo-1546470427-e43e91dae1a5?w=400&h=400&fit=crop',
+        image: img2,
         category: 'vegetable',
         tags: ['diet-foods', 'healthy-foods'],
         rating: 4.3,
@@ -39,7 +59,7 @@ export const products: Product[] = [
         price: 4.50,
         originalPrice: 5.99,
         discount: 25,
-        image: 'https://images.unsplash.com/photo-1509440159596-0249088772ff?w=400&h=400&fit=crop',
+        image: img3,
         category: 'bakery',
         tags: ['frozen-foods', 'vitamin-items'],
         rating: 4.7,
@@ -54,7 +74,7 @@ export const products: Product[] = [
         price: 3.99,
         originalPrice: 5.49,
         discount: 27,
-        image: 'https://images.unsplash.com/photo-1621506289937-a8e4df240d0b?w=400&h=400&fit=crop',
+        image: img4,
         category: 'beverages',
         tags: ['diet-foods', 'vitamin-items'],
         rating: 4.6,
@@ -69,7 +89,7 @@ export const products: Product[] = [
         price: 2.79,
         originalPrice: 3.49,
         discount: 20,
-        image: 'https://images.unsplash.com/photo-1563636619-e9143da7973b?w=400&h=400&fit=crop',
+        image: img5,
         category: 'dairy',
         tags: ['vitamin-items', 'healthy-foods'],
         rating: 4.4,
@@ -83,7 +103,7 @@ export const products: Product[] = [
         price: 3.29,
         originalPrice: 4.49,
         discount: 27,
-        image: 'https://images.unsplash.com/photo-1488477181946-6428a0291777?w=400&h=400&fit=crop',
+        image: img6,
         category: 'dairy',
         tags: ['diet-foods', 'healthy-foods'],
         rating: 4.8,
@@ -98,7 +118,7 @@ export const products: Product[] = [
         price: 5.99,
         originalPrice: 7.99,
         discount: 25,
-        image: 'https://images.unsplash.com/photo-1505252585461-04db1eb84625?w=400&h=400&fit=crop',
+        image: img7,
         category: 'beverages',
         tags: ['frozen-foods', 'diet-foods'],
         rating: 4.5,
@@ -112,7 +132,7 @@ export const products: Product[] = [
         price: 4.99,
         originalPrice: 6.49,
         discount: 23,
-        image: 'https://images.unsplash.com/photo-1517686469429-8bdb88b9f907?w=400&h=400&fit=crop',
+        image: img8,
         category: 'bakery',
         tags: ['vitamin-items', 'diet-foods'],
         rating: 4.2,
@@ -126,7 +146,7 @@ export const products: Product[] = [
         price: 7.99,
         originalPrice: 9.99,
         discount: 20,
-        image: 'https://images.unsplash.com/photo-1559181567-c3190bec4364?w=400&h=400&fit=crop',
+        image: img9,
         category: 'snacks',
         tags: ['healthy-foods', 'vitamin-items'],
         rating: 4.9,
@@ -141,7 +161,7 @@ export const products: Product[] = [
         price: 3.49,
         originalPrice: 4.99,
         discount: 30,
-        image: 'https://images.unsplash.com/photo-1459411621453-7b03977f4bfc?w=400&h=400&fit=crop',
+        image: img10,
         category: 'vegetable',
         tags: ['frozen-foods', 'healthy-foods'],
         rating: 4.3,
@@ -155,7 +175,7 @@ export const products: Product[] = [
         price: 8.99,
         originalPrice: 12.99,
         discount: 31,
-        image: 'https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=400&h=400&fit=crop',
+        image: img11,
         category: 'vitamins',
         tags: ['vitamin-items', 'diet-foods'],
         rating: 4.7,
@@ -169,7 +189,7 @@ export const products: Product[] = [
         price: 5.49,
         originalPrice: 6.99,
         discount: 21,
-        image: 'https://images.unsplash.com/photo-1452195100486-9cc805987862?w=400&h=400&fit=crop',
+        image: img12,
         category: 'dairy',
         tags: ['frozen-foods', 'healthy-foods'],
         rating: 4.6,
@@ -183,7 +203,7 @@ export const products: Product[] = [
         price: 1.99,
         originalPrice: 2.99,
         discount: 33,
-        image: 'https://images.unsplash.com/photo-1603833665858-e61d17a86224?w=400&h=400&fit=crop',
+        image: img13,
         category: 'fruits',
         tags: ['healthy-foods', 'diet-foods'],
         rating: 4.4,
@@ -198,7 +218,7 @@ export const products: Product[] = [
         price: 4.29,
         originalPrice: 5.99,
         discount: 28,
-        image: 'https://images.unsplash.com/photo-1605271030866-df6c1eef6d3d?w=400&h=400&fit=crop',
+        image: img14,
         category: 'beverages',
         tags: ['diet-foods', 'vitamin-items'],
         rating: 4.1,
@@ -212,7 +232,7 @@ export const products: Product[] = [
         price: 2.99,
         originalPrice: 3.99,
         discount: 25,
-        image: 'https://images.unsplash.com/photo-1575202993979-89ffee2c7e50?w=400&h=400&fit=crop',
+        image: img15,
         category: 'snacks',
         tags: ['frozen-foods', 'diet-foods'],
         rating: 4.0,
@@ -226,7 +246,7 @@ export const products: Product[] = [
         price: 2.49,
         originalPrice: 3.49,
         discount: 29,
-        image: 'https://images.unsplash.com/photo-1561136594-7f68413baa99?w=400&h=400&fit=crop',
+        image: img16,
         category: 'vegetable',
         tags: ['healthy-foods', 'diet-foods'],
         rating: 4.6,

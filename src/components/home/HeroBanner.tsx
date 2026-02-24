@@ -1,13 +1,12 @@
 'use client';
 
-import { useRef } from 'react';
-import Carousel from './carousel/carousel';
 import { heroSlides } from '@/data/banner';
+import Carousel from './carousel/carousel';
 
 
 
 export default function HeroBanner() {
-    const swiperRef = useRef(null);
+
 
     return (
         <section className=" py-6">

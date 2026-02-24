@@ -2,7 +2,6 @@ import Link from "next/link";
 import { FiChevronDown, FiHeart, FiMenu, FiSearch, FiShoppingCart, FiUser, FiX } from "react-icons/fi";
 import Image from "next/image";
 import logo from "../../../../public/logo-02.svg";
-import { AnimatePresence, motion } from "framer-motion";
 
 interface Props {
     isMobileOpen: boolean;
